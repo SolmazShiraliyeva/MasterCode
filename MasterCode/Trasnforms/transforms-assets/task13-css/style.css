@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ball {
+  border-radius: 100%;
+  background-color: aqua;
+  width: 120px;
+  height: 120px;
+  margin: 50px;
+  transition-duration: 2s;
+  animation-name: ball;
+}
+
+.ball:hover {
+  transform: translate(550px) scale(1.5);
+  
+}
+
+

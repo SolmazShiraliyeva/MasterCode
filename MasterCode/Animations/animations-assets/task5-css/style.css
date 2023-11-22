@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: green;
+}
+
+.head {
+  text-align: center;
+}
+
+h3 {
+  margin: 30px;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.text2-reverse {
+  animation-direction: reverse;
+  animation-name: reverse;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes reverse {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.text1-normal {
+  animation-direction: normal;
+  animation-name: normal;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes normal {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.text3-alternate {
+  animation-direction: alternate;
+  animation-name: alternate;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternate {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}
+.text4-alternate-reverse {
+  animation-direction: alternate-reverse;
+  animation-name: alternate-reverse;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alternate-reverse {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(200px);
+  }
+}

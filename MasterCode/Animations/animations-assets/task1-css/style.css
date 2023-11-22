@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 50px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(235, 114, 114);
+  animation:rotate 10s infinite ;
+}
+.box::after {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  animation:rotate 6s infinite;
+  top: 75px;
+  left: 75px;
+}
+
+.box::before {
+  content: " ";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background-color: green;
+  animation:rotate 8s infinite;
+  top: 40px;
+  left: 40px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    
+}
+}

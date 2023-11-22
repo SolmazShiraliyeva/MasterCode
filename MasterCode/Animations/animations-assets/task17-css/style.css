@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  height: 250px;
+  background-color: blueviolet;
+  margin: 100px;
+  transition: all 1s linear;
+}
+
+.box:hover {
+  transform: scale(1.5);
+}

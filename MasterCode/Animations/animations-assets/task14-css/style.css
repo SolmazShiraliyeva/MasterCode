@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top {
+    display: inline-block;
+    left: 40%;
+    top: 150px;
+    margin: 10px;
+    position: relative;
+    width: 30px;
+    height: 150px;
+    /*border: 1px solid black;
+    */background-color: aquamarine;
+}
+
+.box1{
+    animation: top1 2s linear infinite;
+}
+@keyframes top1{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(1.7);
+
+}
+
+70%{
+    transform: scaleY(0.8);
+  
+}
+100%{
+    transform: scale(1);
+
+}
+
+  }
+
+.box2{
+    animation: end2 2s linear infinite;
+}
+@keyframes end2{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(1.6);
+
+}
+
+70%{
+    transform: scaleY(0.6);
+ 
+}
+100%{
+    transform: scale(1);
+ 
+}
+
+  }
+
+.box3{
+    animation: top3 2s linear infinite;
+}
+@keyframes top3{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(1.8);
+
+}
+
+70%{
+    transform: scaleY(0.7);
+  
+}
+100%{
+    transform: scale(1);
+  
+}
+
+  }
+
+  .box4{
+    animation: top4 2s linear infinite;
+}
+@keyframes top4{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(1.7);
+
+}
+
+70%{
+    transform: scaleY(0.7);
+
+}
+100%{
+    transform: scale(1);
+ 
+}
+
+  }
+
+  .box5{
+    animation: top5 2s linear infinite;
+}
+@keyframes top5{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(1.7);
+ 
+}
+
+70%{
+    transform: scaleY(0.8);
+
+}
+100%{
+    transform: scale(1);
+  
+}
+
+  }
+
+
+  .last {
+    display: inline-block;
+    left: 23.7%;
+    top: 450px;
+    margin: 10px;
+    position: relative;
+    width: 30px;
+    height: 150px;
+    /*border: 1px solid black;
+    */background-color: darkcyan;
+}
+
+
+.box1-end{
+    animation: end1 2s linear infinite;
+    -webkit-animation: end1 2s linear infinite;
+}
+@keyframes end1{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(0.7);
+   
+}
+
+70%{
+    transform: scaleY(1.8);
+   
+}
+100%{
+    transform: scale(1);
+
+}
+
+  }
+
+.box2-end{
+    animation: end2 2s linear infinite;
+ 
+}
+@keyframes end2{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(0.6);
+  
+}
+
+70%{
+    transform: scaleY(1.6);
+}
+100%{
+    transform: scale(1);
+ 
+}
+
+  }
+
+.box3-end{
+    animation: end3 2s linear infinite;}
+   @keyframes end3{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(0.8);
+  
+}
+
+70%{
+    transform: scaleY(1.7);
+    
+}
+100%{
+    transform: scale(1);
+  
+}
+
+  }
+
+  .box4-end{
+    animation: end4 2s linear infinite;
+}
+@keyframes end4{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(0.7);
+  
+}
+
+70%{
+    transform: scaleY(1.7);
+  
+}
+100%{
+    transform: scale(1);
+ 
+}
+
+  }
+
+  .box5-end{
+    animation: end5 2s linear infinite;
+    
+}
+@keyframes end5{
+    0%{
+        transform: scaleY(0);
+}
+
+50%{
+    transform: scaleY(0.7);
+   
+}
+
+70%{
+    transform: scaleY(1.8);
+    -webkit-transform: scaleY(1.8);
+    -moz-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+}
+100%{
+    transform: scale(1);
+  
+}
+
+  }

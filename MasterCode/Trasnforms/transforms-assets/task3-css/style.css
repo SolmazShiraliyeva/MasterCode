@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 10px;
+  height: 10px;
+  margin: 100px;
+  background-color: rgb(62, 146, 118);
+  transition-duration: 1s;
+  position: relative;
+}
+
+.p{
+  color: white;
+  font-size: 3px;
+}
+
+
+
+
+.p:hover {
+  transform: scale(1.5) rotate(-90deg);
+}
+
+.box:hover {
+  transform: scale(8) rotate(90deg);
+
+}
+

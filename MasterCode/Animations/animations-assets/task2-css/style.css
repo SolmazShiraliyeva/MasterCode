@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    animation: move 6s infinite;
+    /*margin: 500px;
+    */
+}
+
+@keyframes move{
+
+    0%   {top: 0px; left: 0px; }
+    25%  {top: 0px; left: 500px; }
+    50%  {top: 500px; left: 500px; }
+    75%  {top: 500px; left: 0px;}
+    100% {top: 0px; left: 0px; }
+
+
+
+
+
+
+}
+

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border: none;
+  transition-duration: 1s;
+}
+
+.box:hover {
+  transform: translate(300px);
+}

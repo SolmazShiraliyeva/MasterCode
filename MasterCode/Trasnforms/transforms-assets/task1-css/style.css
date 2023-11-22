@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.box{
+   width: 200px;
+   height: 200px;
+   background-color:aquamarine;
+   margin: 300px;
+   transition-duration:1s ;
+   cursor: pointer;
+   
+   
+}
+.box:hover{
+   transform: scale(2);
+  
+}

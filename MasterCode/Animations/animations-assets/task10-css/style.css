@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 200px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.boxX:hover {
+    transform-origin: center;
+    animation:X-animation .5s linear forwards;
+}
+
+@keyframes X-animation{
+    from{
+        transform: rotateX(0);
+}
+to{
+    transform: rotateX(150deg);
+  
+}
+}
+.boxY:hover {
+    transform-origin: center;
+    animation:Y-animation .5s linear forwards;
+}
+
+@keyframes Y-animation{
+    from{
+        transform: rotateY(0);
+      
+}
+to{
+    transform: rotateY(150deg);
+  
+}
+}
+.boxZ:hover {
+    transform-origin: center;
+    animation:Z-animation .5s linear forwards;
+}
+
+@keyframes Z-animation{
+    from{
+        transform: rotateZ(0);
+      
+}
+to{
+    transform: rotateZ(150deg);
+  
+}
+}

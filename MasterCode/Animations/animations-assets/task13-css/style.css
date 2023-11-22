@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    margin: 40px 120px ;
+}
+
+.box{
+width: 280px;
+height: 50px;
+border:1px solid black;
+background-color: transparent;
+position: relative;
+margin-left: 100px;
+overflow: hidden;
+}
+
+.animated::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 50px;
+    background-color: blue;
+    animation:animated-box 3s linear forwards infinite;
+}
+@keyframes animated-box{
+    0%{
+        transform: translateX(0);
+        
+}
+
+50%{
+    transform: translateX(-50px);
+
+}
+90%{
+    transform: translateX(5px);
+ 
+}
+100%{
+    transform: translateX(-20);
+   
+}
+}
+
+.not-animated::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 50px;
+    background-color: blue;
+}
+
+.not-animated:hover::before{
+    transform: scaleX(1.5);
+   
+}

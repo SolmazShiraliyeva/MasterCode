@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+  background-color: red;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.box:hover {
+  transform: scaleX(6);
+}

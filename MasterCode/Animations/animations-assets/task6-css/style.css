@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}
+
+ul {
+  margin: 60px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.li-1 {
+  animation: first-li 1s linear forwards;
+}
+
+@keyframes first-li {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 45px;
+    color: green;
+  }
+}
+
+.li-2 {
+  animation: second-li 1s linear forwards 1s;
+}
+
+@keyframes second-li {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 45px;
+    color: green;
+  }
+}
+
+.li-3 {
+  animation: third-li 1s linear forwards 2s ;
+}
+
+@keyframes third-li {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 45px;
+    color: green;
+  }
+}
+
+.li-4 {
+  animation: fourth-li 1s linear forwards 3s ;
+  -webkit-animation: fourth-li 1s linear forwards 3s ;
+}
+
+@keyframes fourth-li {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 45px;
+    color: green;
+  }
+}
+
+.li-5 {
+  animation: fifth-li 1s linear forwards 4s;
+}
+
+@keyframes fifth-li {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 45px;
+    color: green;
+  }
+}

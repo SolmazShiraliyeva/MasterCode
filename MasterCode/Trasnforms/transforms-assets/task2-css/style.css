@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    margin: 150px;
+    justify-content: space-around;
+   
+}
+
+.box1{
+    background-color:aquamarine;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s linear;
+   
+}
+
+.box1:hover{
+    transform: rotate(360deg);
+
+}
+
+.box2{
+    background-color:lightpink;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s linear;
+
+}
+
+.box2:hover{
+    transform: rotate(1turn);
+  
+}
+

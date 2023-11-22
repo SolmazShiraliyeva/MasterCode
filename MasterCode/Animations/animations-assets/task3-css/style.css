@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-duration: 1s;
+}
+
+.red:hover{
+    transform: scaleX(5);
+   
+}
+
+
+.blue{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: blue;
+    animation: move 1s linear 2s;
+}
+
+@keyframes move {
+
+from{
+    transform: scaleX(1);
+   
+}
+
+to{
+    transform: scaleX(5);
+
+}
+    
+}

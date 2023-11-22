@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  margin: 50px;
+  position: relative;
+}
+
+.box::before {
+  content: "ROTATE ";
+  width: 155px;
+  height: 155px;
+  background-color: rgb(235, 216, 203);
+  position: absolute;
+  transition-duration: 2s;
+  top: 0;
+  left: 0;
+}
+
+.box:hover::before {
+  transform: rotate(1turn);
+}

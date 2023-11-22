@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  top: 46%;
+  left: 48%;
+  position: absolute;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  transition-duration: 1s;
+}
+
+.right {
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+}
+
+.left {
+  position: absolute;
+  right: 50%;
+  margin-top: 250px;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box1:hover {
+  transform: rotate(90deg);
+  transform-origin: top;
+}
+
+.box2 {
+  background-color: blue;
+}
+
+.box2:hover {
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+}
+
+.box3 {
+  background-color: yellow;
+}
+
+.box3:hover {
+  transform: rotate(-90deg);
+  transform-origin: top;
+}
+
+.box4 {
+  background-color: green;
+}
+
+.box4:hover {
+  transform: rotate(90deg);
+  transform-origin: bottom;
+}

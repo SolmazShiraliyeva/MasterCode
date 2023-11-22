@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h1 {
+  top: 46%;
+  left: 48%;
+  position: absolute;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  transition-duration: 1s;
+}
+
+.right {
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+  animation-name: right-move;
+}
+
+.left {
+  position: absolute;
+  right: 50%;
+  margin-top: 250px;
+  animation-name: left-move;
+}
+
+.box1 {
+  background-color: red;
+  animation: left-box1  1s  ease  ;
+  display: flex;
+}
+
+
+@keyframes left-box1 {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(90deg);
+      transform-origin: left top;
+    }
+  }
+
+
+
+
+.box2 {
+  background-color: blue;
+  animation: left-box2  1s  ease ;
+  display: flex;
+}
+
+
+@keyframes left-box2 {
+    0% {
+        transform: rotate(0);
+      }
+    
+      100% {
+        transform: rotate(-90deg);
+        transform-origin: bottom left;
+      }
+}
+
+
+
+
+
+.box3 {
+  background-color: yellow;
+  animation: right-box3  1s  ease ;
+  display: flex;
+}
+
+@keyframes right-box3 {
+    0% {
+        transform: rotate(0);
+      }
+    
+      100% {
+        transform: rotate(-90deg);
+        transform-origin: right top;
+      }
+}
+
+
+.box4 {
+  background-color: green;
+  animation: right-box4  1s  ease ;
+  display: flex;
+}
+
+@keyframes right-box4 {
+    0% {
+        transform: rotate(0);
+      }
+    
+      100% {
+        transform: rotate(90deg);
+        transform-origin: right bottom;
+      }
+}
+
+
+
+
+
+/* .box1 {
+    background-color: red;
+  }
+  
+  .box1:hover {
+    transform: rotate(90deg);
+    transform-origin: left top ;
+  }
+  
+  .box2 {
+    background-color: blue;
+  }
+  
+  .box2:hover {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+   
+}
+  
+  .box3 {
+    background-color: yellow;
+  }
+  
+  .box3:hover {
+    transform: rotate(-90deg);
+    transform-origin: right top;
+   
+}
+  
+  .box4 {
+    background-color: green;
+  }
+  
+  .box4:hover {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+  } */

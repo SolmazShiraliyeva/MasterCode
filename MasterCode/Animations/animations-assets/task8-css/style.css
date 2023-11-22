@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  margin: 30px;
+  padding: 20px;
+  width: 300px;
+  height: 280px;
+  border: none;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+}
+
+/* .box:hover {
+  background-color: rgb(179, 131, 224);
+  color: black;
+  border-radius: 0;
+} */
+
+
+.box:hover{
+  animation:box .5s linear forwards;
+}
+
+@keyframes box {
+  from {
+    background-color: blueviolet;
+    color: white;
+  }
+
+
+  to {
+    background-color: rgb(179, 131, 224);
+    color: black;
+    border-radius: 0;
+  }
+}

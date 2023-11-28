@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  color: white;
+  background-color: #1e1e1e;
+  height: 80px;
+  justify-content: space-around;
+}
+
+.header-p1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+}
+
+span {
+  color: #a6a001;
+}
+
+.header-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.header-ul a:hover {
+  color: #a6a001;
+}
+
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.bi-chevron-right {
+  background-image: url(images/Ellipse\ 2761.svg);
+  background-repeat: no-repeat;
+}
+
+/* !Main */
+
+main {
+  background-color: #101113;
+  width: 100%;
+  height: 1000px;
+  color: white;
+}
+
+.portofolio-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-text {
+  width: 535px;
+  padding: 50px 15px;
+  margin-top: 8%;
+}
+
+.main-text p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 15px;
+}
+
+.main-text h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 70px;
+  padding-bottom: 10px;
+}
+
+.main-text a {
+  background-image: url(images/Ellipse\ 2761.svg);
+  background-repeat: no-repeat;
+}
+
+
+.main-left .portfolio {
+  position: absolute;
+  padding: 0 55px;
+}
+
+/* !page2 */
+
+.page2 {
+  width: 100%;
+  height: 100px;
+  background-color: #1E1E1E;
+}
+
+.page2 img {
+  padding: 30px;
+}
+
+/* !Page3 */
+
+.page3 {
+  width: 100%;
+  height: 800px;
+  background-color: #101113;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+
+.page3-boxes {
+  width: 380px;
+  height: 450px;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 25px;
+}
+
+
+.page3 .text {
+  padding-top: 100px;
+}
+
+
+.page3 .text h2 {
+  font-weight: 400;
+
+}
+
+.page3 .text p {
+  color: #ACACAC;
+}
+
+.page3-rotate {
+  color: #1d1e21;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 50px;
+  width: 50px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  margin-right: 5px;
+}
+
+
+
+
+
+
+/* !page4 */
+.page4 {
+  width: 100%;
+  height: 115vw;
+  background-color: #101113;
+}
+
+.page4 h2 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #A6A001;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.btn-all {
+  width: 800px;
+  height: 70px;
+  background-color: #1E1E1E;
+  border-radius: 15px;
+  margin-left: 26%;
+  margin-top: 30px;
+
+}
+
+.btn-page4 {
+  cursor: pointer;
+
+  background-color: transparent;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 20px;
+  margin: 8px;
+}
+
+.btn-page4:hover {
+  background-color: #A6A001;
+  color: black;
+}
+
+.page4 .box1 {
+  grid-area: box1;
+}
+
+.page4 .box2 {
+  grid-area: box2;
+}
+
+.page4 .box3 {
+  grid-area: box3;
+}
+
+.page4 .box4 {
+  grid-area: box4;
+}
+
+.page4 .box5 {
+  grid-area: box5;
+}
+
+.page4 .box6 {
+  grid-area: box6;
+}
+
+.page4-all-boxes {
+  width: 800px;
+  height: 850px;
+  display: grid;
+  gap: 10px;
+  margin-left: 12%;
+  margin-top: 30px;
+  grid-template-areas:
+    "box1 box1 box2 "
+    "box3 box4 box4  "
+    "box5 box5 box6";
+}
+
+
+.page4-rotate {
+  color: #1d1e21;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 50px;
+  width: 50px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+}
+
+.page4 a {
+  margin-left: 138%;
+  width: 200px;
+  margin-top: 10%;
+
+}
+
+/* !page5 */
+
+.page5 {
+  width: 100%;
+  height: 850px;
+  background-color: #101113;
+}
+
+.page5 h2 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #A6A001;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page5-main-box {
+  margin-left: 20%;
+  margin-top: 80px;
+  width: 1000px;
+  height: 550px;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.left-text {
+  width: 450px;
+  height: 300px;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  padding: 20px;
+
+}
+
+.left-text img {
+  padding-left: 315px;
+  padding-top: 20px;
+}
+
+.page5-rotate {
+  color: #1d1e21;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 50px;
+  width: 50px;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  margin-left: 1330px;
+}
+
+/* !page6 */
+
+
+.page6 {
+  width: 100%;
+  height: 800px;
+  background-color: #101113;
+
+}
+
+
+
+.page6 h2 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #A6A001;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page6-all {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.page6-box {
+  width: 410px;
+  height: 500px;
+}
+
+.page6-all h3 {
+  color: #FFF;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.page6-all p {
+  color: #C5BEBE;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+
+}
+
+
+/* !page7 */
+
+.page7 {
+  background-color: #1E1E1E;
+  height: 450px;
+  width: 100%;
+  color: white;
+}
+
+.end-page7 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left .header-p1 {
+  padding-bottom: 40px;
+  font-size: 38px;
+}
+
+
+.left .end-text {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.left-image {
+  padding-top: 80px;
+}
+
+.phone {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+
+}
+
+.mail {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+
+
+}
+
+.end-part {
+  width: 300px;
+  margin-top: 80px;
+  height: 400px;
+
+}
+
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle li {
+  list-style: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.middle li p {
+  font-size: 25px;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.right p {
+  font-size: 25px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.right select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  margin-top: 40px;
+  width: 250px;
+  height: 50px;
+
+}
+
+.right option {
+  background-color: #1d1e21;
+
+}
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  background-color: #1d1e21;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 10px;
+}

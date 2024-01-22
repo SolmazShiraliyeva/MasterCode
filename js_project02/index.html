@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arrays/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="login_form">
+
+
+        <!-- <div class="container">
+            <h1>Login</h1>
+            <div class="login">
+                <form action="#">
+                    <div class="info">
+                        <label for="user">
+                            <i class="fa-regular fa-user" style="color: #370c9c;"></i>
+                            <input type="text" name="user" placeholder="Username or Email">
+
+                        </label>
+                    </div>
+                    <div class="info">
+                        <div class="info-pass">
+                            <label for="password">
+                                <i class="fa-solid fa-lock" style="color: #370c9c;"></i>
+                                <input id="passInput" type="password" placeholder="Enter your Password">
+                        </div>
+                        <span class="show-btn">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                        </label>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox">Remember me
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button class="login-btn" type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <fieldset>
+                    <legend>or connect with</legend>
+                    <a href="https://www.facebook.com ">
+                        <i class="fa-brands fa-facebook" style="color: #0300b3;"></i>
+                    </a>
+                    <a href="https://www.google.com">
+                        <i class="fa-brands fa-google" style="color: #34057a;"></i>
+                    </a>
+                    <a href="https://www.github.com">
+                        <i class="fa-brands fa-github" style="color: #000000; "></i>
+                    </a>
+                </fieldset>
+            </div>
+
+
+
+
+
+
+        </div> -->
+
+
+
+
+        <div class="container">
+
+            <h1>Login</h1>
+
+            <!-- !FORM -->
+            <form action="#">
+                <div class="user">
+                    <label for="name">
+                        <i class="fa-regular fa-user" style="color: #370c9c;"></i>
+                        <input type="text" name="name" placeholder="Username or Email">
+                    </label>
+                </div>
+
+                <div class="user pass">
+                    <label for="password">
+                        <i class="fa-solid fa-lock" style="color: #370c9c;"></i>
+                        <input type="password" name="password" id="passInput" placeholder="Enter your Password">
+                    </label>
+                    <span class="show-btn">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+
+
+                <div class="remember">
+                    <div class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <label for="remember">
+                            Remember me
+                        </label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button class="login-btn">Login</button>
+
+
+            </form>
+
+
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+<fieldset>
+<legend>or connect with</legend>
+<a href="https://www.facebook.com ">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLUlEQVR4nO2azU4UQRDHO9uNiwcJILtbtVHWRE568Q28GA2JRo+iL+DFQHyBMW4VBNDoRmPilaNHBT/ewBDPAkJMFPVggMSLETGsqVlFArPLznTP7Cyhkj5ttqt/U/+pqa5upQ5sv1r/WI9GvqKRJg3SjAaeN0BrBni9NmhNA835vyFNaqTLquR1q1TYQCWbwfJ1A/TaIP02yNVwQ/5DLzPI12Qulbgdu3fYQPmWAfoSfvF1BvBngzSiSl5nIgwaaFAjLzkD2DE00KJGuhAfwUAlq4ErcQEEyG5KIu8WIs8FjfQ2OQiuRQdpVhW8vBuIwtgJCXfSEGZLavxe1mAHAZzz02iLIMxWZHhJ5SYgGkTJ62yFnEwjmUVJ0RrpsZVzoB8a+L4BPivvmFJPtUKvr6Nw53QGy0OSOEQ2IWX2MBwE0KClFD5kc+WTzfgKP/fo+RBplhYsQDY6inSm2YcWGgRosamPpv/FttIzTTULEQXE1MZw41kHKlnbskMKx9hBgJYbvvh+AWgVDa4qKJcCFwx0wwB9FOnZ+jDIVUkY9Z+OX8VagtQpKwzydxcA5v94EUzRP9YTrRTfAeJSQthwbKher2uXI9G2CwcJglR1YfRiAAjdbTsQ5IkARzTjevF72vHxohUM8LPdEQlZLrgA0UW6ZBUR4Pldkxrg1cRBkG/byYu+BYGsJw1ikKftpEU/0wLyNQ6QVbswN4ZyMbdpRlqWFW9LQDTQnNP027KIQFD69Vud7QWigcb3b4miSl53exWN9CuwaPSdAb9qHxCerudLSVe8XUAyRb66x1ZXuuIpBwFaVqe8Q/VBaml4JPUgyDcbQvyLik2bNG4QLb3gZjuOcj6RThDa1MXyuaYgtsE8ShuIBnqgQptIDGnWsbajQyC92fMFr2vo9aXmWCEvjXDrg57o22AHclqo1/SLAOPlWyEzLXICzql4DkNpMyE5PYn17F3OJ+KUmgaeD51iI5uUMsjDUio4gwD+5H+xW3IDonaFY+jv7jJKl13+M+0XgJFTq2vr9bqk4SZtTIP03L9AA7Sy7VLNikZ+J9tT2dn5m6Kj40ecr+PAVDrsDz5EUh6vZuzqAAAAAElFTkSuQmCC" width="37px">
+</a>
+<a href="https://www.google.com">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEkUlEQVR4nO2Zb0wbZRzHn3taesUtRpOJYbo/DoQM5c/GMgryzxkYxbGBiQsbNBCEFGaIY8zCCuaUMSiQAQMGQWAgcSY2GeuNuzpc8NqNvRoCItE3841Dthj3ToNzbX+mVRBI197Zo2VJv8n3XZ+nn89dn6dPrwj5448/HgcoJIWqgGIoxywU4HuQTfwJSsIKBxBAKgJIQzbIJhZBhX+BE/g6VAUU2ccgXwc0UgWU4tvwNmGBJASCqiQsoMa3QRsQ433wOlk4qPEsvCkQ2llTEUAxnoEaFOIdeA3RCumEzWPwtT2IrHCK0K0f+HkUCMX4B9HBk9b0PTwNFJKJC9+NngcVfrDu8En/toJoFw9+EMnhOPGr1+DLCE40eIeAGn/vPXgsMvyHRIfgrbEMT0IlroUmaQpQaAtQKAjOSN6C05hy7Db21zgbW4pN4sI3kyGQQVh5g5+W9PJZfEChZ+ADydAqkVKR4R1vVIHv8IIvwPNwDr0oeP4aFAJ5+P76wJvl22CcfAQaCUCyC/gSPAV6JEEbLWAmdWAmwdHeAIB0wvmV35DweiQBs2x+WcDeURmACv8Hn0lYoAK9hDZiwCSPXwW/VI4E0En/ObuclPSjjRowybROBZY6FPAAyhGJNmrATF5xKWCSdQiZL1gzC2I0XDthO9rUd9e9gImccynAkRm+EAjWzMIbddcW+Qg8dCMQ6iuB3TW3rHwEHrkWQJt9JbCjehKeaoHtVd+C5x+hm7IwXwns1t60Pd2L+JNRHovYTI642UY7fSVwRDc8z0NAduZJ8A+5Z6Geif/jvF4RiEROy3D+puiPvrG4Eii/0DjqXoALVDiDnx0PBhWthENXs6HDGHtJbIGTnfX97u6Arq/iuHsBQBjMsntL4DYzCfRYOGQbDjvg7c2jlZaL11/bJhZ8W496Z2SNyeoK/vVas4XiKH5P88BENtrhfzdthrNMwjL4ylaPJi9wXIrHjwcpjpIeafxswd3VL2lrm+A9KXCBL98df+GvEjrdKfxSP2YTZjyRoDhKmt/SM+d2/6+egsbuylhBkzcwihlX8CvvRP/X4VuFwvfeiNhe1lX3E5/d51hz75zQ+RE9FvZKPq208pHIp5WWzq/2DlCDKXJ38w6PRW1qZ/b15RmU1pyRHDja2uH2FEp9ekrQl+dyutmY1iweAitFGljFdJdxL6VnIw5cGdsVdJkL2zJgjEq8aNxTV8ckTNpfs3JM1kgOFPZQsLXqO6cC77c3dSNPomPjpvkKeNKiwXLYWX1nFfy7TQM/Ik+j10fINHTqfW9IFH5RCJG1Jgd8ev2Xv53o6hJ0cHxiOG7HczVM4oI3JI7pc0HVemGeGq4MEgV+hYT8LBM/K2RN/J+eYxXTRmPo+v3m7jNGNecaMq2iX3lDprWXjWlG3sgwvSe0gY2beseQ5TF4ztXDjqt++caru5C3MzQWGdvM7L9VZDj4WCh4AZ3xuJGJm/icifb+n3xrowck6WeiC1uN+0a1TOLPajptUWVQWu13yH4IzDVk2tSGtMWqa8nzLex+ts8YU2Afg/zxxx/kaf4GzSVnCicBYF0AAAAASUVORK5CYII=" width="38px">
+</a>
+<a href="https://www.github.com">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4klEQVR4nO2ZW4hNYRTHf2PGjMuMaHKpk4QHGqQQyqSQZw9TCilqchu5xDyMSykvDGrwwDxTysMU8iYSuTZNLomYJmXcPSiXidj6ap3a7c453/r2/vaZKftX6+XMPv/1/87e+1trfQMZGRm+mAasAY4B14DnwHvgC9ALPADOAXuAuUAFQ4A6oBm4AwSO8Ro4BOQGw/hw+SW/xjAejZ9AB1BfLvPLgGcejEfjA9CUtvlNwO8UzAeh6JQ77JUq4EzKxoNQXAaqfS7gbBnNBxKXgEof5vcOgvlA4nhS8yuBP0XEDwDjgY1ATwxzpk7sBKYAM0tctyqu+RHAyxLCJmmeYcBm2RJtxgeAFnmvwhS7vh8YSwwOWowUeskWyZ1ZKgVqpEROPjN/W1wkX1Ai2l3NjwO+x1hAXKotuYyXiS6COxSPwgSPC5ikyLfPRfCRQnCFxwUsV+R7pW0AGxRiHz03YTnRtOWdrRHboBBajX+aFHl3a4ROW0R6UurlK4D7ltznNUK3fPwKMdluyd2tEXns4zmMSYMl9zuNyAuLiJnC0qJOUQ+s9A3hBQz4eIRmpbiAOZbcpi+y0mURMbNwWrRacpsCa+WoRaRPGjTfjJKTilK5r2iE1isKihkvfdOpyNumEapXDu4dBXr6OFQBJxX5TDRqRa8rBU3lXJLAfCPwUJnrM1CjFd6iFM3HXWArMF2hba7ZBtxzzHHCdZx8ExFYBywEnibcododjQfAX2AGjrQUEForre/bIscgGioVtSaIxAViUCMnB2GhXukazXP/K8GA0+xg/hswmZjMk/IdFpwfOiN9AvwAbss+rmWqwwJaSciuiODFpIJy9qkx3+Vj9jACpyLC5kAqKTbz5j2pxRMVUriiW+d+GUIOe15At5z6eaetwMubD1eKmb8BjCFFFhQZelyJft+0L0fS+N9AIWrlbnwKJXfFFKe8+Zuy45Wd0TLkm53KFdPAXZXtOCMj43/lH/wRwzngjJpgAAAAAElFTkSuQmCC" width="40px">
+</a>
+</fieldset>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
